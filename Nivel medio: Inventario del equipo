@@ -1,0 +1,10 @@
+inventario = {
+    "lapices": 10,
+    "borradores": 3,
+    "hojas": 2,
+    "marcadores": 8
+}
+
+for material, cantidad in inventario.items():
+    if cantidad < 5:
+        print(material + ":", cantidad)
