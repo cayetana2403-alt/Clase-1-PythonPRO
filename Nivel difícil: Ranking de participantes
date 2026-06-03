@@ -1,0 +1,14 @@
+participantes = {
+    "Ana": [80, 75, 90],
+    "Luis": [50, 60, 65]
+}
+
+for nombre, puntajes in participantes.items():
+    promedio = sum(puntajes) / len(puntajes)
+
+    if promedio >= 70:
+        resultado = "Clasifica"
+    else:
+        resultado = "No clasifica"
+
+    print(nombre, "- Promedio:", round(promedio, 1), "-", resultado)
