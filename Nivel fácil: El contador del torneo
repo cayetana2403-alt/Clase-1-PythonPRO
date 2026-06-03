@@ -1,0 +1,81 @@
+puntajes = [4, 7, 10, 15, 22, 31]
+
+pares = 0
+impares = 0
+
+for numero in puntajes:
+    if numero % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+print("Pares:", pares:)
+print("Impares:", impares:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
