@@ -1,0 +1,16 @@
+eco_tips = [
+    "♻️ Usa una botella reutilizable en lugar de comprar botellas de plástico.",
+    "💡 Apaga las luces cuando salgas de una habitación.",
+    "🚿 Toma duchas de menos de 5 minutos para ahorrar agua.",
+    "🛍️ Lleva una bolsa reutilizable cuando vayas de compras.",
+    "📄 Usa ambas caras del papel antes de reciclarlo.",
+    "🔌 Desconecta los cargadores cuando no los estés usando.",
+    "🥤 Evita usar pajillas (popotes) de plástico.",
+    "🌱 Planta un árbol o una planta para ayudar al planeta."
+]
+
+@bot.command()
+async def eco(ctx):
+    """Da un consejo ecológico aleatorio."""
+    consejo = random.choice(eco_tips)
+    await ctx.send(f"🌍 Consejo ecológico del día:\n{consejo}")
