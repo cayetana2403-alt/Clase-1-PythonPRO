@@ -1,0 +1,78 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #595a8a, #2c2d4d);
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Contenedor visual (sin tocar HTML, usamos body directo) */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal */
+h1 {
+    color: #232139;
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    background: #a6bbe9;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Subtítulos */
+h2 {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 26px;
+    border-left: 6px solid #a6bbe9;
+    padding-left: 12px;
+}
+
+/* Párrafos */
+p {
+    max-width: 800px;
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Lista */
+ul {
+    max-width: 700px;
+    background: rgba(255,255,255,0.08);
+    padding: 20px 40px;
+    border-radius: 15px;
+    list-style: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Items de lista */
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Imagen */
+img {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
