@@ -1,4 +1,4 @@
-""" $hello
+"""$hello
 $bye
 $passw
 $dado
@@ -190,10 +190,45 @@ async def eco(ctx):
     consejo = random.choice(eco_tips)
     await ctx.send(f"🌍 Consejo ecológico del día:\n{consejo}")
 
+
+Funciones = [
+    "👋 $hello",
+    "👋 $bye",
+    "🔐 $passw",
+    "🎲 $dado",
+    "🖼️ $mem",
+    "🦆 $duck",
+    "🐶 $dog",
+    "🦊 $fox",
+    "⚡ $pokemon",
+    "➕ $add número1 número2",
+    "😎 $cool bot",
+    "🌱 $eco",
+    "🏞️ $meme",
+    "➖ $sub número1 número2",
+    "➗ $div número1 número2",
+    "✖️ $mul número1 número2",
+    "🆘 $ayuda"
+]
+
+@bot.command()
+async def ayuda(ctx):
+    """Muestra las funciones disponibles"""
+    await ctx.send(
+        "📋 **Estas son mis funciones:**\n\n" +
+        "\n".join(Funciones)
+    )
 # ===============================================
 
 
+
+
 bot.run(TOKEN)
+
+
+
+
+
 
 
 
