@@ -1,78 +1,112 @@
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 18px;
+    background: linear-gradient(#595a8a, #a6bbe9);
+    color: #232139;
+    text-align: center;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #595a8a, #2c2d4d);
-    color: #f1f1f1;
-    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Contenedor visual (sin tocar HTML, usamos body directo) */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-/* Título principal */
+/* Título */
 h1 {
     color: #232139;
-    font-size: 42px;
-    font-family: "Montserrat", sans-serif;
-    background: #a6bbe9;
-    padding: 20px 30px;
-    border-radius: 15px;
-    margin-top: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    text-align: center;
+    font-size: 40px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
 }
+
+
+/* Animación del título */
+h1:hover {
+    animation: color-change 3s infinite;
+}
+
+
+/* Cambio de color de letras */
+@keyframes color-change {
+    0% {
+        color: #232139;
+    }
+
+    50% {
+        color: #a6bbe9;
+    }
+
+    100% {
+        color: #232139;
+    }
+}
+
 
 /* Subtítulos */
 h2 {
+    color: white;
+    font-size: 28px;
     margin-top: 30px;
-    color: #ffffff;
-    font-size: 26px;
-    border-left: 6px solid #a6bbe9;
-    padding-left: 12px;
 }
+
 
 /* Párrafos */
 p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
     max-width: 800px;
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 20px auto;
 }
+
+
+/* Hover de los párrafos */
+p:hover {
+    animation: background-change 3s infinite;
+}
+
 
 /* Lista */
 ul {
-    max-width: 700px;
-    background: rgba(255,255,255,0.08);
-    padding: 20px 40px;
-    border-radius: 15px;
-    list-style: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
 }
 
-/* Items de lista */
-li {
-    margin: 10px 0;
-    font-size: 18px;
+
+/* Hover de la lista */
+ul:hover {
+    animation: background-change 3s infinite;
 }
+
+
+/* Animación del fondo */
+@keyframes background-change {
+    0% {
+        background-color: #ffffff;
+    }
+
+    50% {
+        background-color: #bda6e9;
+    }
+
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+
+li {
+    margin: 10px;
+}
+
 
 /* Imagen */
 img {
-    width: 90%;
-    max-width: 500px;
-    margin: 30px 0;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05);
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+    margin-top: 20px;
 }
